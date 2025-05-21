@@ -1,0 +1,58 @@
+#formio {
+  max-width: 800px; /* 限制最大宽度 */
+  margin: 40px auto; /* 上下边距40px，左右自动居中 */
+  padding: 30px; /* 内边距 */
+  background: #fff; /* 白色背景 */
+  border-radius: 12px; /* 圆角 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 柔和阴影 */
+}
+
+/* 覆盖Form.io默认样式 */
+.formio-form {
+  font-family: "Segoe UI", Arial, sans-serif; /* 修改字体 */
+}
+
+/* 调整表单元素间距 */
+.form-group {
+  margin-bottom: 1.5rem; /* 表单项底部间距 */
+}
+
+/* 输入框样式优化 */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  transition: border-color 0.3s;
+}
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* 标签样式 */
+.control-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* 提交按钮美化 */
+.btn-primary {
+  background: #007bff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* 响应式设计：手机端优化 */
+@media (max-width: 768px) {
+  #formio {
+    margin: 20px;
+    padding: 20px;
+  }
+}
