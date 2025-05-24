@@ -9,7 +9,6 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net.cn/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
     <style>
       .tag-container {
@@ -132,6 +131,7 @@
                   pattern="^.{2,20}$"
                   placeholder="请输入游戏中文标题"
                   name="title"
+                  required
                 />
                 <p class="validator-hint">标题必须为2到20个字符</p>
 
@@ -149,7 +149,6 @@
                 <input
                   type="url"
                   class="input validator"
-                  required
                   placeholder="https://"
                   value="https://"
                   pattern="^[a-zA-Z]+://[^\s]+$"
@@ -163,6 +162,7 @@
                 <label class="fieldset-label">开发商</label>
                 <input
                   type="text"
+                  required
                   class="input validator"
                   pattern="^.{2,20}$"
                   minlength="2"
@@ -185,6 +185,7 @@
                   maxlength="10"
                   title="Only letters, numbers or dash"
                   name="author"
+                  required
                 />
                 <p class="validator-hint">
                   只允许中文、英文、数字,长度2到10个字符
@@ -376,10 +377,19 @@
       save_btn.addEventListener("click", () => {
         const formData = formToJSON();
 
-        const jsonBlob = new Blob([formData], { type: "application/json" });
+        const blob = new Blob([formData], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "data.json";
 
-        const zip = new JSZip();
-        zip.file("data.json", jsonBlob);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        // const zip = new JSZip();
+        // zip.file("data.json", jsonBlob);
 
         // const coversFolder = zip.folder("covers");
         // if (data.covers.length > 0) {
@@ -404,23 +414,23 @@
         //   );
         // }
 
-        zip
-          .generateAsync({ type: "blob" })
-          .then((blob) => {
-            const downloadUrl = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = downloadUrl;
-            link.download = generateUUIDv4() + ".zip";
+        // zip
+        //   .generateAsync({ type: "blob" })
+        //   .then((blob) => {
+        //     const downloadUrl = URL.createObjectURL(blob);
+        //     const link = document.createElement("a");
+        //     link.href = downloadUrl;
+        //     link.download = generateUUIDv4() + ".zip";
 
-            document.body.appendChild(link);
-            link.click();
+        //     document.body.appendChild(link);
+        //     link.click();
 
-            document.body.removeChild(link);
-            URL.revokeObjectURL(downloadUrl);
-          })
-          .catch((error) => {
-            console.error("ZIP打包失败:", error);
-          });
+        //     document.body.removeChild(link);
+        //     URL.revokeObjectURL(downloadUrl);
+        //   })
+        //   .catch((error) => {
+        //     console.error("ZIP打包失败:", error);
+        //   });
       });
 
       function generateUUIDv4() {
