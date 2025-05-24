@@ -16,9 +16,11 @@ Web 框架小题大做，原生 Web 灵活性较差，表单构建器提供可�
 
 ```
 ./
-├── data.json   表单提交的数据对象示例
-├── form.json   构建表单的JSON对象
-├── index.html  表单页面
+├── data.json   数据模型
+├── formio-builder.json   formio构建器的JSON对象
+├── formio-data.json   formioa表单提交JSON对象
+├── index.html  formio表单页面
+├── original.html  原生表单页面
 ├── README.md
 └── style.css
 ```
