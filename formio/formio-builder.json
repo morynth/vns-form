@@ -1,0 +1,612 @@
+{
+  "display": "form",
+  "settings": {
+    "pdf": {
+      "id": "1ec0f8ee-6685-5d98-a847-26f67b67d6f0",
+      "src": "https://files.form.io/pdf/5692b91fd1028f01000407e3/file/1ec0f8ee-6685-5d98-a847-26f67b67d6f0"
+    }
+  },
+  "components": [
+    {
+      "display": "form",
+      "settings": {
+        "pdf": {
+          "id": "1ec0f8ee-6685-5d98-a847-26f67b67d6f0",
+          "src": "https://files.form.io/pdf/5692b91fd1028f01000407e3/file/1ec0f8ee-6685-5d98-a847-26f67b67d6f0"
+        }
+      },
+      "components": [
+        {
+          "label": "游戏名称",
+          "tooltip": "游戏名称至少填写日语、英语、简中、繁中其中一种",
+          "hideLabel": false,
+          "tableView": false,
+          "validateWhenHidden": false,
+          "key": "gal_names",
+          "type": "container",
+          "input": true,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "p",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "游戏名称至少填写简中、日语、英语、繁中其中一种，可从游戏官网、社区（Bangumi、萌娘百科、vndb）获取",
+              "refreshOnChange": false,
+              "key": "html",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "日语",
+              "placeholder": "日语",
+              "applyMaskOn": "change",
+              "hideLabel": true,
+              "tableView": true,
+              "validateWhenHidden": false,
+              "key": "jp",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "英语",
+              "placeholder": "英语",
+              "applyMaskOn": "change",
+              "hideLabel": true,
+              "tableView": true,
+              "validateWhenHidden": false,
+              "key": "en",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "简体中文",
+              "placeholder": "简体中文",
+              "applyMaskOn": "change",
+              "hideLabel": true,
+              "tableView": true,
+              "validateWhenHidden": false,
+              "key": "zh_cn",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "繁体中文",
+              "placeholder": "繁体中文",
+              "applyMaskOn": "change",
+              "hideLabel": true,
+              "tableView": true,
+              "validateWhenHidden": false,
+              "key": "zh_tw",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "游戏别名",
+              "placeholder": "请输入游戏别名      ",
+              "tooltip": "非官方名称，例如第三方汉化组译名，最多10个",
+              "tableView": false,
+              "validateWhenHidden": false,
+              "key": "alias",
+              "type": "tags",
+              "input": true
+            }
+          ]
+        },
+        {
+          "label": "介绍",
+          "hideLabel": false,
+          "tableView": false,
+          "validateWhenHidden": false,
+          "key": "intro",
+          "type": "container",
+          "input": true,
+          "components": [
+            {
+              "label": "HTML",
+              "tag": "p",
+              "attrs": [
+                {
+                  "attr": "",
+                  "value": ""
+                }
+              ],
+              "content": "介绍至少写简体中文、日文、英文、繁体中文中其中一种。可自行撰写或引用游戏官网、社区（Bangumi、萌娘百科、vndb）、贩售平台（DLSite）。\n",
+              "refreshOnChange": false,
+              "key": "html",
+              "type": "htmlelement",
+              "input": false,
+              "tableView": false
+            },
+            {
+              "label": "intro_tab",
+              "components": [
+                {
+                  "label": "简体中文",
+                  "key": "zh_cn_tab",
+                  "components": [
+                    {
+                      "label": "简体中文内容",
+                      "applyMaskOn": "change",
+                      "autoExpand": false,
+                      "hideLabel": true,
+                      "tableView": true,
+                      "inputFormat": "plain",
+                      "validateWhenHidden": false,
+                      "key": "zh_cn",
+                      "type": "textarea",
+                      "input": true
+                    }
+                  ]
+                },
+                {
+                  "label": "日语",
+                  "key": "jp_tab",
+                  "components": [
+                    {
+                      "label": "日文",
+                      "applyMaskOn": "change",
+                      "autoExpand": false,
+                      "hideLabel": true,
+                      "tableView": true,
+                      "inputFormat": "plain",
+                      "validateWhenHidden": false,
+                      "key": "jp",
+                      "type": "textarea",
+                      "input": true
+                    }
+                  ]
+                },
+                {
+                  "label": "英语",
+                  "key": "en_tab",
+                  "components": [
+                    {
+                      "label": "英文",
+                      "applyMaskOn": "change",
+                      "autoExpand": false,
+                      "hideLabel": true,
+                      "tableView": true,
+                      "inputFormat": "plain",
+                      "validateWhenHidden": false,
+                      "key": "en",
+                      "type": "textarea",
+                      "input": true
+                    }
+                  ]
+                },
+                {
+                  "label": "繁体中文",
+                  "key": "zh_tw_tab",
+                  "components": [
+                    {
+                      "label": "繁体中文内容",
+                      "applyMaskOn": "change",
+                      "autoExpand": false,
+                      "hideLabel": true,
+                      "tableView": true,
+                      "inputFormat": "plain",
+                      "validateWhenHidden": false,
+                      "key": "zh_tw",
+                      "type": "textarea",
+                      "input": true
+                    }
+                  ]
+                }
+              ],
+              "key": "intro_tab",
+              "type": "tabs",
+              "input": false,
+              "tableView": false
+            }
+          ]
+        },
+        {
+          "label": "开发商/社团官网",
+          "placeholder": "填写官网链接,如有多个，每个输入框填写一个。",
+          "tooltip": "填写官网链接,如有多个，每个输入框填写一个。",
+          "applyMaskOn": "change",
+          "tableView": true,
+          "multiple": true,
+          "defaultValue": [""],
+          "validateWhenHidden": false,
+          "key": "developers",
+          "type": "url",
+          "input": true
+        },
+        {
+          "label": "游戏标签",
+          "placeholder": "请用英文逗号分隔标签,例如纯爱,病娇,萝莉,妹控,拔作                ",
+          "tableView": false,
+          "storeas": "array",
+          "validate": {
+            "required": true,
+            "customMessage": "标签必填"
+          },
+          "validateWhenHidden": false,
+          "key": "tags",
+          "type": "tags",
+          "input": true
+        },
+        {
+          "label": "Columns",
+          "columns": [
+            {
+              "components": [
+                {
+                  "label": "提交",
+                  "action": "url",
+                  "showValidations": true,
+                  "tableView": false,
+                  "key": "submit",
+                  "type": "button",
+                  "url": "https://example.form.io",
+                  "headers": [
+                    {
+                      "header": "",
+                      "value": ""
+                    }
+                  ],
+                  "input": true
+                }
+              ],
+              "width": 2,
+              "offset": 0,
+              "push": 0,
+              "pull": 0,
+              "size": "md",
+              "currentWidth": 2
+            },
+            {
+              "components": [
+                {
+                  "label": "重置",
+                  "action": "reset",
+                  "showValidations": true,
+                  "tableView": false,
+                  "key": "reset",
+                  "type": "button",
+                  "input": true
+                }
+              ],
+              "width": 2,
+              "offset": 0,
+              "push": 0,
+              "pull": 0,
+              "size": "md",
+              "currentWidth": 2
+            },
+            {
+              "components": [
+                {
+                  "label": "保存",
+                  "action": "event",
+                  "showValidations": true,
+                  "tableView": false,
+                  "key": "save_local",
+                  "logic": [
+                    {
+                      "name": "saveLocal",
+                      "trigger": {
+                        "type": "event",
+                        "event": "save_local"
+                      },
+                      "actions": [
+                        {
+                          "name": "save",
+                          "type": "customAction",
+                          "customAction": "console.log(data)\n// console.log(submission)\nconst jsonString = JSON.stringify(data, null, 2);\n    \n// 创建JSON Blob\nconst jsonBlob = new Blob([jsonString], { type: 'application/json' });\n\n// 创建ZIP实例并添加文件\nconst zip = new JSZip();\nzip.file(\"data.json\", jsonBlob);\nconst coversFolder = zip.folder(\"covers\");\n\n// 添加图片文件\nif (data.covers.length > 0) {\n     Promise.all(\n        data.covers.map( (cover, index) => {\n            // 处理Base64数据\n            const [metaInfo, base64Data] = cover.url.split(',');\n            if (!base64Data) {\n                console.warn(`图片${index}数据异常，已跳过`);\n                return;\n            }\n\n            // 生成安全文件名\n            const filename = cover.originalName\n\n            // 添加图片到压缩包\n            coversFolder.file(filename, base64Data, {\n                base64: true,\n                createFolders: false\n            });\n        })\n    );\n}\n\n\n// 生成ZIP文件并触发下载\nzip.generateAsync({ type: \"blob\" })\n    .then(blob => {\n        // 创建临时下载链接\n        const downloadUrl = URL.createObjectURL(blob);\n        const link = document.createElement(\"a\");\n        link.href = downloadUrl;\n        link.download = util.guid() +\".zip\";\n        \n        // 模拟点击下载\n        document.body.appendChild(link);\n        link.click();\n        \n        // 清理资源\n        document.body.removeChild(link);\n        URL.revokeObjectURL(downloadUrl);\n    })\n    .catch(error => {\n        console.error(\"ZIP打包失败:\", error);\n    });"
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "button",
+                  "event": "save_local",
+                  "input": true
+                }
+              ],
+              "size": "md",
+              "width": 3,
+              "currentWidth": 3
+            }
+          ],
+          "key": "columns",
+          "type": "columns",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "label": "nsfw_title",
+          "tag": "label",
+          "attrs": [
+            {
+              "attr": "class",
+              "value": "col-form-label"
+            },
+            {
+              "attr": "ref",
+              "value": "label"
+            }
+          ],
+          "content": "内容限制",
+          "refreshOnChange": false,
+          "key": "nsfw_title",
+          "type": "htmlelement",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "label": "HTML",
+          "tag": "p",
+          "attrs": [
+            {
+              "attr": "",
+              "value": ""
+            }
+          ],
+          "content": "如果游戏不适合在公共场合观看，即包含暴力、色情、血腥等内容，请勾选本项，若没有任何不适宜内容 (全年龄), 则取消勾选。",
+          "refreshOnChange": false,
+          "key": "html2",
+          "type": "htmlelement",
+          "input": false,
+          "tableView": false
+        },
+        {
+          "label": "启用NSFW",
+          "tableView": false,
+          "validateWhenHidden": false,
+          "key": "check_nsfw",
+          "type": "checkbox",
+          "input": true,
+          "defaultValue": false
+        },
+        {
+          "label": "预览图",
+          "tooltip": "选择截图或原件，不要拍照",
+          "tableView": false,
+          "storage": "base64",
+          "webcam": false,
+          "capture": false,
+          "fileTypes": [
+            {
+              "label": "",
+              "value": ""
+            }
+          ],
+          "filePattern": ".jpg,.png,.jpeg,.webp",
+          "fileMaxSize": "10MB",
+          "multiple": true,
+          "validate": {
+            "required": true
+          },
+          "validateWhenHidden": false,
+          "key": "covers",
+          "type": "file",
+          "input": true
+        },
+        {
+          "title": "联系方式",
+          "theme": "info",
+          "collapsible": false,
+          "key": "panel",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "contacts",
+              "columns": [
+                {
+                  "components": [
+                    {
+                      "label": "github",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "https://github.com/AdingApkgg"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "GitHub → https://github.com/AdingApkgg"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "GitHub",
+                      "refreshOnChange": false,
+                      "key": "github",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "width": 2,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "currentWidth": 2
+                },
+                {
+                  "components": [
+                    {
+                      "label": "bilibili",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "https://space.bilibili.com/1198037522"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "bilibili → https://space.bilibili.com/1198037522"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "bilibili",
+                      "refreshOnChange": false,
+                      "key": "bilibili",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "width": 2,
+                  "offset": 0,
+                  "push": 0,
+                  "pull": 0,
+                  "size": "md",
+                  "currentWidth": 2
+                },
+                {
+                  "components": [
+                    {
+                      "label": "telegram",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "https://t.me/FullDiveSAO"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "Telegram → https://t.me/FullDiveSAO"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "Telegram",
+                      "refreshOnChange": false,
+                      "key": "telegram",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "size": "md",
+                  "width": 2,
+                  "currentWidth": 2
+                },
+                {
+                  "components": [
+                    {
+                      "label": "E-mail",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "mailto:i@saop.cc"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "E-mail → mailto:i@saop.cc"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "E-mail",
+                      "refreshOnChange": false,
+                      "key": "email",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "size": "md",
+                  "width": 2,
+                  "currentWidth": 2
+                },
+                {
+                  "components": [
+                    {
+                      "label": "qq",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=a0v1vVzAixSZHtzEv8CDjqixn_DORxFk&amp;authKey=RAMUimVPIwUzxIbDf8tNfJmic%2BagIybvYqmVId41e4Qpz2syvM%2BhzE3n%2F0ffHpjf&amp;noverify=0&amp;group_code=1037396187"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "QQ 社群 → http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=a0v1vVzAixSZHtzEv8CDjqixn_DORxFk&amp;authKey=RAMUimVPIwUzxIbDf8tNfJmic%2BagIybvYqmVId41e4Qpz2syvM%2BhzE3n%2F0ffHpjf&amp;noverify=0&amp;group_code=1037396187"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "QQ 社群",
+                      "refreshOnChange": false,
+                      "key": "qq",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "size": "md",
+                  "width": 2,
+                  "currentWidth": 2
+                },
+                {
+                  "components": [
+                    {
+                      "label": "twitter",
+                      "tag": "a",
+                      "attrs": [
+                        {
+                          "attr": "href",
+                          "value": "https://twitter.com/AdingApkgg"
+                        },
+                        {
+                          "attr": "title",
+                          "value": "Twitter → https://twitter.com/AdingApkgg"
+                        },
+                        {
+                          "attr": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "content": "Twitter",
+                      "refreshOnChange": false,
+                      "key": "twitter",
+                      "type": "htmlelement",
+                      "input": false,
+                      "tableView": false
+                    }
+                  ],
+                  "size": "md",
+                  "width": 2,
+                  "currentWidth": 2
+                }
+              ],
+              "key": "contacts",
+              "type": "columns",
+              "input": false,
+              "tableView": false
+            }
+          ]
+        }
+      ],
+      "input": true,
+      "key": "",
+      "tableView": false,
+      "label": ""
+    }
+  ]
+}
